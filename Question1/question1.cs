@@ -1,0 +1,51 @@
+Console.WriteLine("Class ID: YOUR_CLASS_ID");
+        Console.WriteLine("Registration ID: YOUR_REG_ID");
+        Console.WriteLine("Name: YOUR_NAME");
+        Console.WriteLine("Submission Date: 28-10-2026");
+
+        Console.Write("Enter day number (1-7): ");
+        int day;
+
+        if (int.TryParse(Console.ReadLine(), out day))
+        {
+            switch (day)
+            {
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
+
+                case 7:
+                    Console.WriteLine("Sunday");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid number");
+                    break;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid number");
+        }
+    }
+}
