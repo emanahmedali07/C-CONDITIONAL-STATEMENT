@@ -1,0 +1,27 @@
+{
+       Console.WriteLine("Class ID: YOUR_CLASS_ID");
+        Console.WriteLine("Registration ID: YOUR_REG_ID");
+        Console.WriteLine("Name: YOUR_NAME");
+        Console.WriteLine("Submission Date: 28-10-2026");
+
+        Console.Write("Enter year:  ");
+        int year = Convert.ToInt32(Console.ReadLine());
+
+        if (year % 400 == 0)
+        {
+            Console.WriteLine("Leap Year");
+        }
+        else if (year % 100 == 0)
+        {
+            Console.WriteLine("Not a Leap Year");
+        }
+        else if (year % 4 == 0)
+        {
+            Console.WriteLine("Leap Year");
+        }
+        else
+        {
+            Console.WriteLine("Not a Leap Year");
+        }
+    }
+}
